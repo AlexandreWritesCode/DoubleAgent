@@ -1,6 +1,5 @@
 package view;
 
-import java.io.IOException;
 import java.io.PrintWriter;
 
 import model.Agent;
@@ -36,7 +35,6 @@ public class Draw {
 			+"Age: "+agent[i].getAge()+" | "
 			+"Gender: "+agent[i].displayGender()+"<br>"
 			+agent[i].getLatitude()+", "+agent[i].getLongitude()+"\").openPopup();");
-
 		}
 	}
 
