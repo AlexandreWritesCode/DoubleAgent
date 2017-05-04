@@ -33,4 +33,19 @@ public class Agent {
 	public Gender getGender(){
 		return this.sex;
 	}
+	
+	public String displayGender(){
+		String s = "";
+		switch (this.sex){ // just showing I can do case switches 
+			case MALE:
+				s = "Male";
+				break;
+			case FEMALE:
+				s = "Female";
+				break;
+			default: 
+				break;
+		}
+		return s;
+	}
 }

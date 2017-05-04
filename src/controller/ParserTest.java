@@ -16,7 +16,7 @@ public class ParserTest {
 	static public void setup(){
 		Database roster = new Database();
 		Parser.CSVreader(roster);
-		a = roster.getRoster("", 1000);
+		a = roster.getRoster();
 	}
 	
 	@Test
