@@ -18,10 +18,3 @@ public class Main {
 		System.out.println("Done.");
 	}
 }
-
-/**for(Agent x : roster){
-if(x.getName().indexOf(substring) >= 0 && x.getAge() <= maxAge){ // empty substring will be added
-	a.add(x);
-}
-}
-**/

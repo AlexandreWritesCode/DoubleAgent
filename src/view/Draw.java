@@ -10,7 +10,7 @@ public class Draw {
 	final private static int HEIGHT = 700;
 	final private static String FEMALE = "blue";
 	final private static String MALE = "red";
-	final private static String FILL = "#000000";
+	final private static String FILL = "#FFFFFF";
 	
 	static public void htmlSetup(PrintWriter writer){
 	    writer.println("<!DOCTYPE html> <html> <head> <title>Alexandre Cabello\'s CrossCHX submission</title> <meta charset=\"utf-8\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
@@ -28,7 +28,7 @@ public class Draw {
 			} else { // female
 				genderColored=FEMALE;
 			}
-			writer.println("L.circle(["+agent[i].getLatitude()+","+agent[i].getLatitude()+"], {color: '"+ genderColored
+			writer.println("L.circle(["+agent[i].getLatitude()+","+agent[i].getLongitude()+"], {color: '"+ genderColored
 			+"', fillColor: '"+FILL+"', fillOpacity: 1, radius: 5000}).addTo(mymap)" // change size and opacity as you'd like
 			+ ".bindPopup(\""
 			+agent[i].getName()+"<br>"
@@ -36,6 +36,7 @@ public class Draw {
 			+"Gender: "+agent[i].displayGender()+"<br>"
 			+agent[i].getLatitude()+", "+agent[i].getLongitude()+"\").openPopup();");
 		}
+		writer.println("</script>");
 	}
 
 	static private String header (){
@@ -46,7 +47,7 @@ public class Draw {
 		s+="integrity=\"sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==\"";
 		s+="crossorigin=\"\"></script>";
 		s+="<script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>"; // mapbox
-		s+="<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />"; 
+		s+="<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />";
 		return s;
 	}
 	
@@ -63,7 +64,7 @@ public class Draw {
 	}
 	
 	static public void close(PrintWriter writer){
-		 writer.println("</script> </body> </html>");
+		 writer.println("</body> </html>");
 		 writer.close();
 	}
 }

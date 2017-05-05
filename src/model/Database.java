@@ -8,7 +8,7 @@ public class Database {
 	public Database (){
 		roster = new ArrayList<Agent>();
 	}
-	public Agent[] getRoster(){ // arraylist to array
+	public Agent[] getRoster(){ // array list to array
 		return roster.toArray(new Agent[roster.size()]);
 	}
 	public void add(Agent agent) {
