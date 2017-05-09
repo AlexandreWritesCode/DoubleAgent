@@ -18,4 +18,4 @@ View the web application by saving the contents of the project and launching 'in
 - Parser: Parses CSV file
 - ParserTest: showing I can do test cases; two boundary cases for first and last objects
 ## Hightlights
-- Males are color coded red, females are blue. Final strings and integers hard coded in Java to allow ease of change. No encryption was used so my code could be easily viewable despite best practices Classes are written with a strong separation of concerns!
+Males are color coded red, females are blue. Final strings and integers hard coded in Java to allow ease of change. No encryption was used so my code could be easily viewable despite best practices Classes are written with a strong separation of concerns!
