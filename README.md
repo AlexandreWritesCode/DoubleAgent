@@ -3,9 +3,9 @@ As a counter-intelligence agency, we have found the locations of 150 double-agen
 ## How to Run
 View the web application by saving the contents of the project and launching 'index.html' in browser. Import the project into an IDE of your choice to view how Java reads the CSV file of agents, parses file entries into Agent objects, and then  writes those objects to a Javascript/ HTML file for the web. If you want to run a different CSV, you will have to change the final string value in the Parser class.
 ## Lessons Learned
-- Javascript refresher (still consider myself a beginner)
-- Using Mapbox API (JS)
-- Reading a CSV file and using the split function
+- JavaScript refresher (still consider myself a beginner)
+- Using Mapbox API (JavaScript)
+- Learning how to use JQuery (little prior knowledge)
 ## Architecture 
 #### Model
 - Agent: objects that store information about agent's name, latitude, longitude, age and gender; getter methods
