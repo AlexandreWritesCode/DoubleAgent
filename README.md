@@ -1,5 +1,5 @@
 ## Objective
-As a counter-intelligence agency, we have found the locations of 150 double-agent spies. The problem is, we need a way to visualize them on a map. Your mission (if you are willing to accept it) is to visualize this data on a map for each of the double-agents.  This interface will be used by our team to assist in removing these double-agents. 
+You are a part of a spy agency of 150 agents with a code name, age, gender and location. You have been tasked to visualize these agents geographically on a world map. A CSV file contains all of the agent's data, interpreted by Java and visualized via web.
 ## How to Run
 View the web application by saving the contents of the project and launching 'index.html' in browser. Import the project into an IDE of your choice to view how Java is used. If you want to run a different CSV, you will have to change the final string value in the Parser class.
 ## Lessons Learned
